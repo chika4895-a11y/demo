@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+function isArmstrong(num) {
+    const strNum = num.toString();
+    const numDigits = strNum.length;
+    let sum = 0;
+
+    for (let digit of strNum) {
+        sum += Math.pow(parseInt(digit), numDigits);
+    }
+
+    return sum === num;
+    function isArmstrong(num) {
